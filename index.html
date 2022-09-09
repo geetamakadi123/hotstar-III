@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotstar search Movies- Description</title>
+    <style>
+        body{
+             background-image: url("https://monophy.com/media/TxVVB6PfWMjE4/monophy.gif");
+        }
+        #cont,#head{
+            width: 80%;
+            color: rgb(232, 228, 228);
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        #head{
+            font-size: 30px;
+        }
+        input{
+            width: 370px;
+            padding: 8px;
+        }
+        #movies{
+            color: white;
+            height: 300px;
+            width: 372px;
+            padding: 8px;
+            border: 1px solid rgb(127, 155, 155);
+            border-top: none;
+            overflow: scroll;
+            
+        }
+        #More{
+            font-size: 30px; 
+             text-align:center;
+            
+        }
+        #movies>div{
+            display: flex;
+            margin: 6px 0;
+            
+        }
+        #movies>div>img{
+            max-width: 40%;
+            min-width: 40%;
+            max-height: 80px;
+            margin-right: 8px;
+        }
+        #search{
+            width: 25%;
+            padding: 20px;
+        }
+       
+        #movieDesc{
+            display: flex;
+            width: 700px;
+            height: auto;
+            color: white;
+            border-radius: 2px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        }
+        #movieDesc>div>img{
+            width: 100%;
+            max-height: 550px;
+        }
+        #movieDesc>div{
+            padding: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h2>SEARCH MOVIE</h2>
+        <h2>RESULT</h2>
+    </div>
+    <div id="cont">
+        <div id="search">
+            <input id="query" oninput="debounceFunction(main,600)" type="text" placeholder="Enter movie name">
+            <div id="movies"></div>
+        </div>
+        <div id="movieDesc"></div>
+    </div>
+    <h2 style="font-size: 60px; color:white; text-align:center">TRENDING MOVIES</h2>
+    <div id="trending">
+
+    </div>
+    <div  id="More" > <a href="trending.html">SEE MORE</a></div>
+  
+</div>
+</body>
+</html>
+
+<script src="index.js"></script>
